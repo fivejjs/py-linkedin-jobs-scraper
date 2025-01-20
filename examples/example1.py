@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+_ = load_dotenv('.env', override=True)
 # from loguru import logger
 from linkedin_jobs_scraper import LinkedinScraper
 from linkedin_jobs_scraper.events import Events, EventData, EventMetrics
@@ -12,7 +13,7 @@ from linkedin_jobs_scraper.filters import (
     SalaryBaseFilters,
 )
 
-_ = load_dotenv(override=True)
+
 
 
 # Fired once for each successfully processed job
